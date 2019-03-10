@@ -38,14 +38,14 @@ function displayVideos(data){
   	for(let i = 0; i < data.items.length; i++)
     {
     	$(".results").append(`
-    						<div class="videoElement"
+    						<div class="videoElement">
     							<div class = "videoTitle">
                     <a href = "https://www.youtube.com/watch?v=${data.items[i].id.videoId}"" target = "-blank">
       								<h3>${data.items[i].snippet.title}</h3>
                     </a>
     							</div>
     							<a href = "https://www.youtube.com/watch?v=${data.items[i].id.videoId}"" target = "-blank">
-    								<img style="width:20%" src="${data.items[i].snippet.thumbnails.default.url}" alt="${searchTerm} Image" />
+    								<img style="width:15%" src="${data.items[i].snippet.thumbnails.default.url}" alt="${searchTerm} Image" />
     							</a>
     						</div>`);
     }
